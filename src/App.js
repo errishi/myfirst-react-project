@@ -9,8 +9,9 @@ function App() {
     'cName': "MERN",
     'desc': "React Js"
   }
+  let status = true;
   return (
-    <div className="App">
+    <div className="main">
       <h1>Welcome to My react project</h1>
       <h1>{name}</h1>
       {arr.map((element)=>{
@@ -24,6 +25,12 @@ function App() {
       </div>
 
       <div>{10+20}</div>
+
+      {  (status) ? 
+        <h1 style={{color : "red"}}>Welcome to React Js</h1>
+        :
+        ""
+      }
 
     </div>
   );
