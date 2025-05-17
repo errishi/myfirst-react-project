@@ -27,7 +27,7 @@ function App() {
       <div>{10+20}</div>
 
       {  (status) ? 
-        <h1 style={{color : "red"}}>Welcome to React Js</h1>
+        <h1 style={{color : "red", backgroundColor: "yellow"}}>Welcome to React Js</h1>
         :
         ""
       }
