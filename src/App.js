@@ -9,6 +9,14 @@ function App() {
       <Header/>
       <div className='row'>
         <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
       </div>
       <Footer/>
 
