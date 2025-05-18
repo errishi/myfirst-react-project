@@ -5,9 +5,14 @@ import Footer from './Footer';
 import { Card, Button, Col, Container, Row } from 'react-bootstrap';
 
 function App() {
+  let headerInfo={
+    'email': 'ws@gmail.com',
+    'phone': '8293728738'
+  }
+
   return (
     <div className="main">
-      <Header email="ws@gmail.com" phone="8293728738" />
+      <Header headerInfo={headerInfo} cname="Rishi"/>
       <div className='container'>
         <Container fluid>
           <Container>
