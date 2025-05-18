@@ -1,36 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
-  let name = "Rishikesh Singh";
-  let arr = [10, 20, 30, 40];
-  let obj = {
-    'name': "Rishi",
-    'cName': "MERN",
-    'desc': "React Js"
-  }
-  let status = true;
   return (
     <div className="main">
-      <h1>Welcome to My react project</h1>
-      <h1>{name}</h1>
-      {arr.map((element)=>{
-        return(
-          <div>{element}</div>
-        )
-      })}
+      <Header/>
 
-      <div>
-        {obj.cName}
-      </div>
+      <Footer/>
 
-      <div>{10+20}</div>
-
-      {  (status) ? 
-        <h1 style={{color : "red", backgroundColor: "yellow"}}>Welcome to React Js</h1>
-        :
-        ""
-      }
 
     </div>
   );
