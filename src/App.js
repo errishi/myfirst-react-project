@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="main">
       <Header/>
-
+      <div className='row'>
+        <Card/>
+      </div>
       <Footer/>
 
 
@@ -16,3 +18,10 @@ function App() {
 }
 
 export default App;
+
+
+function Card(){
+  return(
+    <div className='cardItems'>Card div</div>
+  )
+}
