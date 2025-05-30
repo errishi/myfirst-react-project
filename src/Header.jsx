@@ -1,4 +1,4 @@
-function Header({headerInfo,cname}){
+function Header({headerInfo,cname, children}){
     // let {headerInfo,cname} = props;
     // console.log(headerInfo,cname)
 
@@ -7,9 +7,8 @@ function Header({headerInfo,cname}){
 
     return(
         <div>
-            <h1>Welcome Header section {headerInfo.email} {cname}</h1>
-            <div>Hello world</div>
-            <div>React project</div>
+            {children}
+            <h1> {headerInfo.email} {cname}</h1>
         </div>
     )
 }

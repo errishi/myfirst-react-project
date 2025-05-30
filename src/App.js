@@ -12,7 +12,9 @@ function App() {
 
   return (
     <div className="main">
-      <Header headerInfo={headerInfo} cname="Rishi"/>
+      <Header headerInfo={headerInfo} cname="Rishi">
+        <h1>Welcome to Header Section</h1>
+      </Header>
       <div className='container'>
         <Container fluid>
           <Container>
@@ -24,7 +26,6 @@ function App() {
             <Row>
               <Col lg="3" md="6">
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Course1</Card.Title>
                     <Card.Text>
@@ -37,7 +38,6 @@ function App() {
               </Col>
               <Col lg="3" md="6">
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Course1</Card.Title>
                     <Card.Text>
@@ -50,7 +50,6 @@ function App() {
               </Col>
               <Col lg="3" md="6">
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Course1</Card.Title>
                     <Card.Text>
@@ -63,7 +62,6 @@ function App() {
               </Col>
               <Col lg="3" md="6">
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Course1</Card.Title>
                     <Card.Text>
@@ -77,6 +75,12 @@ function App() {
             </Row>
           </Container>
         </Container>
+
+        <Container>
+          <Row>
+            <ProductItem/>
+          </Row>
+        </Container>
       </div>
       <Footer />
 
@@ -86,3 +90,21 @@ function App() {
 }
 
 export default App;
+
+
+function ProductItem(){
+  return(
+    <Col lg='3' md='6'>
+      <Card>
+                  <Card.Body>
+                    <Card.Title>Course1</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the
+                      bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+    </Col>
+  )
+}
